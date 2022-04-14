@@ -29,7 +29,7 @@ ngOnInit(): void {
 onSnap() {
   if 
   (this.buttonText === 'Oh snap') {
-    this.faceSnapsService.snapFaceSnapById (this.faceSnap.id);
+
     this.buttonText = 'Oh no do not snap';
   }
 else{

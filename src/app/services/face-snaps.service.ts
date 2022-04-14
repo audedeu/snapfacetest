@@ -1,7 +1,8 @@
 import { Injectable } from "@angular/core";
 import { FaceSnap } from "../models/face-snap.model";
 
-@Injectable ({providedIn: 'root'
+@Injectable ({
+    providedIn: 'root'
 })
 
 export class FaceSnapsService {
@@ -38,7 +39,7 @@ getAllFaceSnaps (): FaceSnap[] {
     return this.faceSnaps; 
 }
 
-snapFaceSnapById(faceSnapId: number): void {
+SnapFaceSnapById(faceSnapId: number): void {
     const faceSnap = this.faceSnaps.find(faceSnap => faceSnap.id === faceSnapId);
     if (faceSnap) {
         faceSnap.snaps++;
